@@ -1,38 +1,197 @@
+*,
+html,
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+    
+    color: rgba(0, 0, 0, 0.87);
+
+}
+
+a{
+  text-decoration: none;
+}
+
 .App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.Login,.signup {
+  width: 450px;
+  border: 1px solid;
+  padding: 40px 40px;
+  border-radius: 6px;
+}
+
+.inputDiv {
+  padding: 12px 0;
+}
+
+.input,.gender {
+  padding: 16px;
+  width: 100%;
+}
+
+.loginWord,.signupWord {
+  text-align: center;
+  padding: 14px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.loginButton, .signupButton {
+  margin-top: 12px;
+    display: block;
+    padding: 16px 26px;
+    width: 100%;
+    outline: none;
+    background: no-repeat;
+    border: none;
+    background-color: #51c2e2;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all ease-out 0.2s;
+    text-align: center;
+}
+
+.loginButton,.signupButton:hover {
+  background-color: #26a9ce;
+}
+
+/* .loginButton:focus {
+  background-color: red;
+} */
+
+.newuserWord {
+  margin: 0;
+  padding: 24px 0;
+
+}
+
+.signupWord{
+  padding-left: 0;
+  text-align: start;
+  padding-top: 0;
+}
+
+.dobandgender{
+  display: flex;
+  column-gap: 24px;
+  /* padding-right: 20px; */
+}
+.dob{
+  width: 50%;
+}
+.genderDiv {
+  padding: 12px 0;
+}
+.gender {
+  padding: 18px 16px;
+  width: 100%;
+}
+
+.error{
+  color: red;
+  font-style: italic;
+}
+
+.home{
+  padding: 0 16px;
+  width: 80%;
+  margin: 0 auto;
+}
+.commonCss{
+  padding: 8px 0;
+  color: #333;
+    font-weight: 400;
+
+}
+h4{
+  margin: 32px 0 24px;
+    
+    border-bottom: 1px solid #e5e5e4;
+    font-size: 2.28rem;
+    color: #333;
+    font-weight: 400;
+}
+.seatRow{
+  display: flex;
+  margin-bottom: 8px;
+}
+.seat{
+  width: 50px;
+    height: 50px;
+    margin-right: 4px;
+}
+.seatId{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+  width: inherit;
+  background-color: grey;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.selectedSeat{
+  background-color:lightgray;
+}
+.referenceDetails{
+  display: flex;
+  justify-content: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bookedCircle, .availableCircle, .selectedCircle{
+  display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+    margin-top: 2px;
+    margin-left: 16px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bookedCircle{
+  background-color: #272727;
 }
+.availableCircle{
+  background-color:gray
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.selectedCircle{
+  background-color: lightgray
+}
+.btn{
+  padding: 10px 24px;
+}
+.enabledBtn{
+  background-color: rgb(128, 171, 171);
+  border: 0;
+  cursor: pointer;
+  color: #333;
+}
+.paymentbtn{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  column-gap: 16px;
+  margin-top: 24px;
 }
 
-.App-link {
-  color: #61dafb;
+.ticket-summary{font-size: 16px;
+color: #333;
+line-height: 1.5;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-weight: normal;
+}
+.bookedSeat{
+  background-color: #272727;
+  cursor: not-allowed;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dark{
+  background-color: #272727;
 }
